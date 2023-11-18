@@ -12,6 +12,27 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .video-container {
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            .video {
+                width: 45%; /* Ajusta el ancho de cada video según tus necesidades */
+                margin: 5px;
+            }
+
+            .image-container {
+                display: flex; /* Esto coloca las imágenes en paralelo */
+                justify-content: space-between; /* Esto separa las imágenes */
+            }
+
+            .image-container img {
+                width: 48%; /* Ancho de las imágenes (ajústalo según tus necesidades) */
+                height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+            }   
+        </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -51,7 +72,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Curso básico de Arduino</h1>
+                        <h1 class="fw-bolder mb-1">Curso de Outputs Attiny 85</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.png" alt="..." />
@@ -61,9 +82,10 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 23, 2023</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Novimebre 1, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Microcontroladores</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
 
                     </header>
@@ -74,44 +96,151 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/web.jpg" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="./img/Arduino-Attiny.png" alt="..." /></figure>
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Resumiendo nuestra práctica, esta consta de alrededor de 17 sub-prácticas que se puede observar como se utilizan distintos Outputs o elementos que nos ayudan a entender las salidas. Ya sean Leds, Buzzers, Motores DC, ServoMotores, entre otras cosas, que se indicarán mas adelante en la sección de materiales.</p>
+                        <p class="fs-6 mb-4">Consta de un proceso distinto a los vistos anterior mente, pero resulta interesante ver las distintas funciones que se pueden realizar con un microcontrolador.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Como introducción a esta práctica de laboratorio se explorará y se buscará comprender a fondo el microcontrolador ATtiny85. En las 17 subprácticas cuidadosamente diseñadas, este componente desempeña un papel central a pesar de su pequeño tamaño. El objetivo principal de estos pasos es profundizar la interacción del ATtiny85 con varios dispositivos de salida, como LED, servomotores y señales de audio.</p>
+                        <p class="fs-6 mb-4">Es importante recalcar, que a pesar de utilizar un microcontrolador, se seguirá utilizando la placa Arduino UNO, la cual funcionará como programador, evidentemente se utilizará para la programación de nuestro micro.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                        
+                        <p class="fs-6 mb-4">Se utilizaron distintos materiales siendo en su mayoria Outputs.</p>
+                        <ul>
+                            <li>Leds de 5v</li>
+                            <li>Protoboards</li>
+                            <li>Resistencias de 220Ω</li>
+                            <li>Resistencias de 10kΩ</li>
+                            <li>Botones de 2 pines</li>
+                            <li>Jumpers Macho-Macho</li>
+                            <li>Placa Arduino UNO</li>
+                            <li>Microcontrolador Attiny85</li>
+                            <li>ServoMotores</li>
+                            <li>Motores DC</li>
+                            <li>Fuente de Poder</li>
+                            <li>Buzzer pasivo</li>
+                            <li>NeoPixels</li>
+                        </ul>                        
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Generalizando todo el proceso, las 17 prácticas constaron de armar circuitos para satifacer el código dado en tinkercad, en la mayoria de prácticas se utilizaron Leds, conectados como comunmente se hace, y con ayuda de botones haciamos encender en ciertos casos el led, ya sea parpadeando o solo manteniendolo prendido. En el caso de los buzzers, se mantenian los dos botones pero como es evidente, cambiabamos el buzzer por leds, lo que nos daba otro tipo de salida, en este caso sonora.</p>
+                        <p class="fs-6 mb-4">En el caso de los servos,  y los motores DC, mateniamos los botones en nuestros circuitos, pero esta vez, en el caso especifico de los motores DC utilizabamos resistencia y un regulador, en algunos casoso haciamos funcionar nuestro motor con ayuda de PWM, funcionalidad ya proporcionada por nuestro microcontrolador. Para ambos casos se utilizaba la fuente de poder, para poder asignar una carga mas constante y evitarnos problemas tecnicos. Por ultimo se utilizaron los NeoPixels, los cuales funcionan igual que un led comun a excepción que recibe tierra, voltaje y además nuestra señal agregando asi un pin mas.</p>
                         
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
-                    
+                            <p class="fs-6 mb-4">A continuación se mostrarán las simulaciones de las práctica en tinkercad.</p>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_1.mp4" type="video/mp4">
+                                </video>
+                                <video class="video" controls>
+                                    <source src="./img/sim_2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_3.mp4" type="video/mp4">
+                                </video>
+                                <video class="video" controls>
+                                    <source src="./img/sim_4.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_5.mp4" type="video/mp4">
+                                </video>
+                                <video class="video" controls>
+                                    <source src="./img/sim_6.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_7.mp4" type="video/mp4">
+                                </video>
+                                <video class="video" controls>
+                                    <source src="./img/sim_8.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_9.mp4" type="video/mp4">
+                                </video>
+                                <video class="video" controls>
+                                    <source src="./img/sim_10.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_11.mp4" type="video/mp4">
+                                </video>
+                                <video class="video" controls>
+                                    <source src="./img/sim_12.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_13.mp4" type="video/mp4">
+                                </video>
+                                <video class="video" controls>
+                                    <source src="./img/sim_14.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_15.mp4" type="video/mp4">
+                                </video>
+                                <video class="video" controls>
+                                    <source src="./img/sim_16.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" controls>
+                                    <source src="./img/sim_17.mp4" type="video/mp4">
+                                </video>
+                            </div>
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            
-                            <p id="construccion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            
+                            <p class="fs-6 mb-4">Se mostrarán los códigos que hacen funcionar nuestro microcontrolador y por tal nuestro circuito.</p>
+                            <div class="image-container">
+                                <img src="./img/img_1.png" alt="Imagen 1">
+                                <img src="./img/img_2.png" alt="Imagen 2">
+                            </div>
+                            <div class="image-container">
+                                <img src="./img/img_3.png" alt="Imagen 1">
+                                <img src="./img/img_4.png" alt="Imagen 2">
+                            </div>
+                            <div class="image-container">
+                                <img src="./img/img_5.png" alt="Imagen 1">
+                                <img src="./img/img_6.png" alt="Imagen 2">
+                            </div>
+                            <div class="image-container">
+                                <img src="./img/img_7.png" alt="Imagen 1">
+                                <img src="./img/img_8.png" alt="Imagen 2">
+                            </div>
+                            <div class="image-container">
+                                <img src="./img/img_9.png" alt="Imagen 1">
+                                <img src="./img/img_10.png" alt="Imagen 2">
+                            </div>
+                            <div class="image-container">
+                                <img src="./img/img_11.png" alt="Imagen 1">
+                                <img src="./img/img_12.png" alt="Imagen 2">
+                            </div>
+                            <div class="image-container">
+                                <img src="./img/img_13.png" alt="Imagen 1">
+                                <img src="./img/img_14.png" alt="Imagen 2">
+                            </div>
+                            <div class="image-container">
+                                <img src="./img/img_15.png" alt="Imagen 1">
+                                <img src="./img/img_16.png" alt="Imagen 2">
+                            </div>
+                            <div class="image-container">
+                                <img src="./img/img_17.png" alt="Imagen 1">
+                            </div>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
@@ -123,8 +252,10 @@
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">En resumen, este recorrido por las 17 prácticas nos ofreció una buena visión del ATtiny85 y su relación con diversos gadgets electrónicos, desde LEDs hasta servomotores y buzzers. No solo nos sumergimos en los detalles técnicos del ATtiny85, sino que también observamos su desempeño en el terreno práctico.
+
+                            No es solo cuestión de programar y presionar botones. La práctica fue más como un paseo educativo que nos permitió comprender mejor el funcionamiento real de las cosas. Cada ejercicio se construyó sobre el anterior, desde encender luces hasta producir sonidos.</p>
+
                         
 
                         <p id="referencias">
