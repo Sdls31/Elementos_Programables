@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Proyecto Final | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .video-container {
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            .video {
+                width: 45%; /* Ajusta el ancho de cada video según tus necesidades */
+                margin: 5px;
+            }
+
+            .image-container {
+                display: flex; /* Esto coloca las imágenes en paralelo */
+                justify-content: space-between; /* Esto separa las imágenes */
+            }
+
+            .image-container img {
+                width: 48%; /* Ancho de las imágenes (ajústalo según tus necesidades) */
+                height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+            }   
+        </style>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Lab. Elementos programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Tipos de sensores</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.png" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">José Sebastián De los Santos Hernández</div>
+                                <div class="text-muted">Ing. Sistemas computacionales</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Diciembre 1, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Robótica</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Diseño 3D</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Salud</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/img_cover.jpeg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">El proyecto se enfocó en el desarrollo de un prototipo de dispositivo wearable centrado en la medición de la temperatura corporal, las pulsaciones por minuto (BPM) y la distancia recorrida (diseñado especialmente para usuarios con discapacidad visual). Este wearable compacto y ergonómico brinda a los usuarios información vital sobre su salud. La retroalimentación positiva de los usuarios beta respalda la efectividad del dispositivo, marcando un paso inicial hacia posibles mejoras y la expansión de características en futuras iteraciones.</p>
+
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">En un mundo cada vez más moldeado por los avances tecnológicos, los sensores se erigen como herramientas indispensables capaces de interpretar y responder a las complejidades de nuestro entorno. Reconocidos como catalizadores de la innovación, los sensores tienen la capacidad de reaccionar a estímulos físicos, químicos o biológicos. Esto plantea la pregunta: ¿podemos aprovechar este poder transformador para abordar los desafíos únicos enfrentados por las personas con discapacidad visual?</p>
+                        <p class="fs-6 mb-4">En medio de este contexto, se ha desarrollado un prototipo de dispositivo wearable diseñado específicamente para medir la temperatura, las pulsaciones por minuto (BPM) y la distancia, teniendo en cuenta a las personas con discapacidad visual. Esta iniciativa no solo representa la convergencia de tecnologías de sensores de vanguardia, sino también un compromiso con la mejora de la vida diaria de aquellos que enfrentan desafíos particulares en salud y movilidad.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Se utilizaron distintos materiales en su mayoria sensores.</p>
+                        <ul>
+                            <li>Protoboards</li>
+                            <li>Jumpers Macho-Macho</li>
+                            <li>Botones de 2 pines</li>
+                            <li>Attiny 85</li>
+                            <li>Placa Arduino UNO</li>
+                            <li>Pantalla OLED</li>
+                            <li>Sensor Ultrasónico</li>
+                            <li>Sensor de BPM</li>
+                            <li>Sensor de temperatura</li>
+                        </ul>     
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">
+                            Reúne los materiales necesarios.
+                            Configura el Arduino como programador ISP, ajusta la configuración del Attiny, construye tu circuito. Recomendamos utilizar los mismos pines que usamos en el Attiny; si decides cambiarlos, debes adaptar el código a las nuevas conexiones.
+                            Descarga el archivo de código y súbelo utilizando el programador en el Arduino IDE. Verifica todas tus conexiones antes de cargar el código.
+                            Tus resultados deberían verse como en el video adjunto.</p>
+                        
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">A continuación, se agrega el link del video alojado en Youtube</p>
+                            <center>
+                                <a href="https://youtube.com/shorts/C01UsaMWiRA?si=ZRvKHcTToVVtPKoU">
+                                    <h2 class="fw-bolder mb-4 mt-5 fs-5">Link del video</h2>
+                                </a>
+                            </center>
+                            <p class="fs-6 mb-4">Además se realizó un diseño 3D para cubrir nuestra pcb, que tambien se agregará a continuación.</p>
+                            <div class="image-container">
+                                <center>
+                                <img src="./img/tinkercad_img.png" alt="Imagen 1" width="600px" height="600px">
+                                </center>
+                            </div>
+                            <div class="image-container">
+                                <center>
+                                <img src="./img/pcb_img.jpeg" alt="Imagen 1">
+                                </center>
+                            </div>
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Los resultados fueron los esperados, pues se llegó a lo que se buscaba, se realizaron distintas pruebas para realmente conocer el rendimiento de nuestro werable, vayas de ellas cumpliendo con lo esperado, y dandonos la oportunidad de seguir mejorando el prototipo en futuros instantes.</p>
+
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión, el proyecto de desarrollo de un dispositivo wearable con sensores biométricos para la medición de la temperatura, frecuencia cardíaca y distancia, especialmente diseñado para usuarios con discapacidad visual, representa una significativa convergencia de innovación tecnológica y compromiso social. La cuidadosa consideración del diseño ergonómico y la selección de parámetros de medición pertinentes demuestran una atención meticulosa a las necesidades específicas de los usuarios. La validación exitosa en pruebas beta subraya la efectividad del prototipo, señalando la posibilidad de futuras iteraciones y mejoras. Este proyecto no solo atiende a las demandas de precisión y usabilidad, sino que también proyecta una perspectiva prometedora para la aplicación de tecnologías sensoriales avanzadas en el ámbito de la salud y la accesibilidad.</p>                     
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
+                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
+                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
